@@ -1,0 +1,43 @@
+:root {
+  --main-color: #010727;
+  --second-color: #eee;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  color: var(--second-color);
+  background-color: var(--main-color);
+  font-family: Raleway, Arial, sans-serif;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media all and (max-width: 768px) {
+  .container {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+}

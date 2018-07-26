@@ -1,0 +1,142 @@
+.logo {
+  display: block;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social-n-search {
+  width: 200px;
+  margin-left: auto;
+  margin-right: 0;
+  margin-bottom: 20px;
+}
+
+.social {
+  display: inline-block;
+}
+
+.social > li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.fab {
+  position: relative;
+}
+
+.fab::after {
+  display: block;
+  position: absolute;
+  top: 6px;
+  right: 4px;
+  width: 20px;
+  height: 25px;
+  background-color: var(--second-color);
+  content: '';
+  z-index: -1;
+}
+
+.fa-facebook-square {
+  color: #3b5998;
+}
+
+.fa-twitter-square {
+  color: #1dcaff;
+}
+
+.fa-google-plus-square {
+  color: #dd4b39;
+}
+
+.search {
+  float: right;
+  color: var(--second-color);
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  width: 400px;
+}
+
+.menu a {
+  color: var(--second-color);
+}
+
+.menu a:hover {
+  border-bottom: 1px solid var(--second-color);
+}
+
+.fa-bars {
+  display: none;
+  color: var(--second-color);
+  order: -1;
+}
+
+
+@media all and (max-width: 768px) {
+  .social-n-search {
+    width: auto;
+  }
+  
+  .social {
+    display: none;
+  }
+
+  .fa-bars {
+    display: block;
+  }
+
+  .burger {
+    position: relative;
+    top: -20px;
+    left: 0;
+    width: 0;
+    height: 0;
+    z-index: 1;
+    transition: left 550ms;
+  }
+
+  .burger:hover {
+    cursor: pointer;
+  }
+
+  .menu {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: -50%;
+    display: block;
+    width: 50%;
+    padding-top: 5%;
+    padding-left: 10%;
+    background-color: var(--second-color);
+    font-size: 2rem;
+    transition: left 500ms;
+  }
+
+  .menu li {
+    margin-bottom: 20px;
+  }
+
+  .menu a {
+    color: var(--main-color);
+  }
+
+  .burger:checked {
+    color: var(--main-color);
+    left: 40%;
+  }
+  
+  .burger:checked::before {
+    content: '\f00d';
+  }
+
+  .burger:checked + .header-right .menu {
+    left: 0;
+  }
+}
