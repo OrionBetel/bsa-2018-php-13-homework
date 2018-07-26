@@ -30,9 +30,20 @@ li {
   list-style-type: none;
 }
 
+img {
+  max-width: 100%;
+  display: block;
+  transition: all 500ms;
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
+}
+
+.main-container {
+  display: flex;
+  justify-content: space-between;
 }
 
 @media all and (max-width: 768px) {

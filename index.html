@@ -11,11 +11,13 @@
     crossorigin="anonymous">
   <link rel="stylesheet" href="css/common.css">
   <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/aside.css">
 </head>
 <body>
   <header class="container header">
     <a href="#">
-      <img class="logo" src="img/logo.jpg" alt="Cosmos logo" width="182" height="107">
+      <img src="img/logo.jpg" alt="Cosmos logo" width="182" height="107">
     </a>
 
     <input class="fas fa-bars fa-2x burger" type="checkbox">
@@ -62,5 +64,147 @@
       </nav>
     </div>
   </header>
+
+  <div class="container main-container">
+    <main class="main">
+      <div class="articles">
+        <article class="article">
+          <a href="http://www.sciencemag.org/news/2018/07/liquid-water-spied-deep-below-polar-ice-cap-mars"
+            target="_blank">
+
+            <div class="img-wrapper">
+              <img src="img/mars-ice-cap.jpg" alt="Mars">
+            </div>
+            <h2>Liquid water spied deep below polar ice cap on Mars</h2>
+            <p>Far beneath the deeply frozen ice cap at Mars’s south pole lies a lake of liquid 
+                water—the first to be found on the Red Planet.
+            </p>
+          </a>
+          <section class="article-info">
+            <span class="article-comments">
+              <i class="far fa-comments"></i>
+              <span class="article-comments-count">4</span>
+            </span>
+            <span class="article-publish-time">25.07.2018 20:00</span>
+            <span class="article-rating">
+              <i class="far fa-star"></i>
+              <span class="article-rating-value">5</span>
+            </span>
+          </section> 
+        </article>
+
+        <article class="article">
+          <a href="http://www.sciencemag.org/news/2018/07/outer-space-may-have-just-gotten-bit-closer"
+            target="_blank">
+
+            <div class="img-wrapper">
+              <img src="img/clouds.jpg" alt="Clouds">
+            </div>
+            <h2>Outer space may have just gotten a bit close</h2>
+            <p>A new study argues that the boundary between Earth’s atmosphere and outer space—known
+              as the Kármán line—is 20 kilometers, or about 20%, closer than scientists thought.
+            </p>
+          </a>
+          <section class="article-info">
+            <span class="article-comments">
+              <i class="far fa-comments"></i>
+              <span class="article-comments-count">4</span>
+            </span>
+            <span class="article-publish-time">25.07.2018 20:00</span>
+              <span class="article-rating">
+                <i class="far fa-star"></i>
+                <span class="article-rating-value">5</span>
+              </span>
+          </section>
+        </article>
+
+        <article class="article" >
+          <a href="http://www.sciencemag.org/news/2018/07/ten-new-moons-including-one-oddball-discovered-around-jupiter"
+            target="_blank">
+
+            <section class="article-content">
+              <div class="img-wrapper">
+                <img src="img/jupiter.jpg" alt="Jupiter">
+              </div>
+              <h2>Ten new moons—including one ‘oddball’—discovered around Jupiter</h2>
+              <p>Jupiter’s orbital family has just rapidly expanded, with scientists today announcing
+                the discovery of 10 new miniature moons around the gas giant.
+              </p>
+            </section>
+          </a>
+          <section class="article-info">
+            <span class="article-comments">
+              <i class="far fa-comments"></i>
+              <span class="article-comments-count">4</span>
+            </span>
+            <span class="article-publish-time">25.07.2018 20:00</span>
+            <span class="article-rating">
+              <i class="far fa-star"></i>
+              <span class="article-rating-value">5</span>
+            </span>
+          </section>
+          
+        </article>
+
+        <article class="article">
+          <a href="http://www.sciencemag.org/news/2018/07/ghostly-particle-caught-polar-ice-ushers-new-way-look-universe"
+            target="_blank">
+
+            <div class="img-wrapper">
+              <img src="img/ice-cube.jpg" alt="Ice Cube Laboratory">
+            </div>
+            <h2>Ghostly particle caught in polar ice ushers in new way to look at the universe</h2>
+            <p>If astronomers are right, a ghostly particle that lit up an instrumented swath of ice
+                beneath the South Pole on 22 September last year was a messenger from a distant
+                galaxy.
+            </p>
+          </a>
+          <section class="article-info">
+            <span class="article-comments">
+              <i class="far fa-comments"></i>
+              <span class="article-comments-count">4</span>
+            </span>
+            <span class="article-publish-time">25.07.2018 20:00</span>
+            <span class="article-rating">
+              <i class="far fa-star"></i>
+              <span class="article-rating-value">5</span>
+            </span>
+          </section>
+        </article>
+      </div>
+    </main>
+    <aside class="aside">
+      <section class="author">
+        <i class="fas fa-user-circle fa-3x author-image"></i>
+        <h4 class="author-name">John Doe</h4>
+        <span class="author-desc">I'm just posting some interesting cosmic stuff on my blog.</span>
+      </section>
+      <ul class="social aside-social">
+        <li>
+          <a href="#">
+            <i class="fab fa-facebook-square fa-2x"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fab fa-twitter-square fa-2x"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fab fa-google-plus-square fa-2x"></i>
+          </a>
+        </li>
+      </ul>
+      <section class="subscribe">
+        <p>Subscribe to receive fresh posts</p>
+        <form class="subscribe-form" action="#" method="POST">
+          <input class="subscribe-input" type="text" placeholder="Your name">
+          <input class="subscribe-input" type="email" placeholder="Your email">
+          <input class="subscribe-button" type="submit" value="Subscribe">
+        </form>
+      </section>
+    </aside>
+  </div>
 </body>
 </html>

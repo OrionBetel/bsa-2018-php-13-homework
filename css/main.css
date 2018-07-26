@@ -1,0 +1,39 @@
+.main {
+  width: calc(100% - 350px);
+  height: 1000px;
+  color: var(--main-color);
+}
+
+.articles {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -12px;
+}
+
+.article {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 12px;
+  margin-bottom: 24px;
+  flex: 1 0 30%;
+  min-width: 300px;
+  max-width: 500px;
+  background-color: var(--second-color);
+  overflow: hidden;
+  border: 12px solid var(--second-color);
+}
+
+.article:hover img {
+  transform: scale(1.5);
+}
+
+.img-wrapper {
+  border-bottom: 1px solid var(--second-color);
+  overflow: hidden;
+}
+
+.article-info {
+  display: flex;
+  justify-content: space-between;
+}

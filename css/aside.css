@@ -1,0 +1,58 @@
+.aside {
+  width: 300px;
+  padding: 1%;
+  color: var(--main-color);
+  background-color: var(--second-color);
+  text-align: center;
+}
+
+.aside > * {
+  margin-bottom: 12px;
+}
+
+.author {
+  text-align-last: left;
+}
+
+.author-image {
+  float: left;
+  margin-right: 12px;
+}
+
+.author-name {
+  margin: 0;
+  margin-bottom: 6px;
+}
+
+.author-desc {
+  font-size: .9em;
+}
+
+.subscribe-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.subscribe-form > * {
+  margin-bottom: 12px;
+}
+
+.subscribe-input {
+  padding: .5em;
+  border: none;
+}
+
+.subscribe-button {
+  border: none;
+  padding: 1em 0;
+  background-color: var(--main-color);
+  color: var(--second-color);
+  text-transform: uppercase;
+  transition: all 250ms;
+}
+
+.subscribe-button:hover {
+  cursor: pointer;
+  background-color: #b5b8cc;
+  color: var(--main-color);
+}
